@@ -1,0 +1,35 @@
+{
+  "name": "dsh-restart",
+  "version": "1.1.0",
+  "description": "DSH 一键重启：host 行注册 /api/dsh-restart 路由，并通过 webServer.tapIndex 往页面注入浮动按钮；点击后用独立进程结束旧实例并按原命令重新拉起，新实例上线后页面自动刷新",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "scripts"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "restart"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "win32"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

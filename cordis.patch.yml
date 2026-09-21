@@ -1,0 +1,4 @@
+# dsh-restart bundle patch: inserts the one-click restart row.
+- insert:
+    - id: dsh-restart
+      name: 'dsh-restart'
